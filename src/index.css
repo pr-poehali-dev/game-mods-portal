@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -99,24 +99,28 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 }
 
 @layer utilities {
   .neon-glow {
-    text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor;
+    text-shadow:
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 15px currentColor;
   }
-  
+
   .neon-border {
-    box-shadow: 0 0 5px currentColor, inset 0 0 5px currentColor;
+    box-shadow:
+      0 0 5px currentColor,
+      inset 0 0 5px currentColor;
   }
-  
+
   .cyber-grid {
-    background-image: 
+    background-image:
       linear-gradient(rgba(255, 0, 128, 0.1) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255, 0, 128, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
   }
-}
 }
